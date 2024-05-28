@@ -98,7 +98,7 @@ function sortExample(arr) {
   console.log("Original Array:", arr);
 
   arr.sort(function(a, b) {
-    return a - b;
+    return b - a;
   });
   console.log("After sort:", arr);
 }
