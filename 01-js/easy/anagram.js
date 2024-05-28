@@ -5,9 +5,8 @@
 */
 
 function isAnagram(str1, str2) {
-  
-    
-    return sortedStr(strl) === sortedStr(str2);
+  //sdsdsdsdsdsd
+  return sortedStr(strl) === sortedStr(str2);
 }
 
 module.exports = isAnagram;
