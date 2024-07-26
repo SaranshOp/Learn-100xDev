@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend part basic",
+  "main": "Server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node Server.js"
+  },
+  "author": "Sars",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Todo App</title>
+  </head>
+  <body>
+    <h1>Todo App</h1>
+
+    <input type="text" id="taskInput" placeholder="Enter a task" />
+    <button onclick="addTask()">Add Task</button>
+    <button onclick="listTasks()">List Tasks</button>
+
+    <ul id="taskList"></ul>
+
+    <script>
+      function addTask() {
+        const taskInput = document.getElementById("taskInput");
+        const task = taskInput.value;
+        fetch(
+          `http://localhost:3000/?action=add&task=${encodeURIComponent(task)}`
+        )
+          .then((response) => response.text()) // parse response as text
+          .then((message) => {
+            console.log(message);
+            listTasks();
+          })
+          .catch((error) => console.error("Error:", error));
+      }
+      function deleteTask(task) {
+        fetch(
+          `http://localhost:3000/?action=delete&task=${encodeURIComponent(
+            task
+          )}`
+        )
+          .then((response) => response.text())
+          .then((message) => {
+            console.log(message);
+            listTasks();
+          });
+      }
+
+      listTasks();
+    </script>
+  </body>
+</html>

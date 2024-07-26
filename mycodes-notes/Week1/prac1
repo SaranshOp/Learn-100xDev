@@ -1,8 +1,0 @@
-function sum(a, b) {
-  return a + b;
-}
-function display(a) {
-  console.log(a);
-}
-const value = sum(2, 2);
-display(value);

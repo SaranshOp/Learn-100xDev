@@ -1,0 +1,25 @@
+//console.log('Hello World')
+
+let number  = 5;
+number = "Hello";
+console.log(number);
+// let, var and const let and const are used real world
+let a = 21;
+// a = 2
+console.log(a);
+const myname = "Sars";
+console.log("this person name is " + myname + " and their age is " + a);
+
+let isMArried = false;
+if(isMArried){
+console.log("Yes, he is married");
+} else {
+  console.log("No, he is not married");
+}
+
+console.log("1" + 1);
+console.log("1" + [1, 2, 3]);
+console.log(1 + [1, 2, 3]);
+console.log(1 + 1);
+
+console.log([1] + [1]);
